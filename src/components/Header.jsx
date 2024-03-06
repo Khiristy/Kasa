@@ -1,11 +1,11 @@
 import kasalogo from '../assets/kasalogo.svg';
 
 
-function Banner() {
+function Header() {
     return (
-        <div className='banner'>
+        <div className='Header'>
             <img src={kasalogo} className="App-logo" alt="logo" />
-            <nav className='banner_nav'>
+            <nav className='Header_nav'>
                 <a href='index.html'>Accueil</a>
                 <a href='apropos.html'>A propos</a>
             </nav>
@@ -13,4 +13,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Header
