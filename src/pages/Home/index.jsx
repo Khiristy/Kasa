@@ -1,17 +1,14 @@
-import Header from '../../components/Header.jsx';
-import Card from '../../components/Card.jsx';
-import Banner from '../../components/Banner.jsx';
-import LogementsList from '../../components/LogementsList.jsx';
+import Gallery from "../../components/logements/GalleryCard.jsx";
+import Banner from "../../components/Banner.jsx";
 
+import homeBanner from "../../assets/images/homeBanner.png";
 
 function Home() {
   return (
-    <div className='components_pos'>
-    <Header />
-    <Banner />
-    <LogementsList />
-    <Card />
-    </div>
+    <main>
+      <Banner texte="Chez vous, partout et ailleurs" image={homeBanner}/>
+      <Gallery />
+    </main>
   );
 }
 

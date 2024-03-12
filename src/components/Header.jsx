@@ -1,16 +1,27 @@
-import kasalogo from '../assets/kasalogo.svg';
+import kasaheaderlogo from "../assets/kasaheaderlogo.svg";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
+class Header extends React.Component {
+  constructor() {
+    super();
+  }
 
-function Header() {
+  render() {
     return (
-        <div className='Header'>
-            <img src={kasalogo} className="App-logo" alt="logo" />
-            <nav className='Header_nav'>
-                <a href='index.html'>Accueil</a>
-                <a href='apropos.html'>A propos</a>
-            </nav>
-        </div>
-    )
+      <div className="header">
+        <img src={kasaheaderlogo} className="App_logo" alt="logo" />
+        <ul className="header_nav">
+          <li>
+            <NavLink to="/">Accueil</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">A propos</NavLink>
+          </li>
+        </ul>
+      </div>
+    );
+  }
 }
 
-export default Header
+export default Header;

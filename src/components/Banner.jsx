@@ -1,17 +1,13 @@
-import banners from '../data/banners.json';
 
-function Banner () {
 
-    const imgSrc = banners[0].src 
-    const imgAlt = banners[0].alt
-    const imgText = banners[0].text
-console.log(process.env.PUBLIC_URL);
+function Banner ({ image, texte }) {
+
     return (
         <div className="banner">
-            <img src={require({imgSrc}).default} alt="" />
-            <h1>{imgText}</h1>
+          <img className="banner_img" src={image} alt="Bannière" />
+          <span className="banner_txt">{texte}</span>
         </div>
-    )
+      );
 }
 
 export default Banner
