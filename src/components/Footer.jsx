@@ -1,4 +1,4 @@
-import kasafooterlogo from "../assets/kasafooterlogo.svg";
+import kasafooterlogo from "../assets/logos/kasafooterlogo.svg";
 
 
 

@@ -1,30 +1,25 @@
-@import './settings.scss';
+@import "./settings.scss";
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 html {
   max-width: 1240px;
   margin: auto;
+  max-height: 100vh;
 }
-
-
-
-
-
-
-
 
 .header {
   align-items: center;
@@ -34,14 +29,12 @@ html {
   padding: 30px 30px 15px;
 
   &_nav {
-
     display: flex;
 
     li {
       list-style-type: none;
 
       a {
-
         padding: 0 15px;
         text-decoration: none;
         color: black;
@@ -50,14 +43,12 @@ html {
   }
 }
 
-
 .banner {
   width: 100%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   &_txt {
     position: absolute;
@@ -81,10 +72,7 @@ html {
   }
 }
 
-
 .gallery {
-
-
   background: #e9e9e9;
   border-radius: 10px;
   margin: 10px auto 15px;
@@ -106,13 +94,11 @@ html {
   margin-bottom: 25px;
   position: relative;
 
-
   &_img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
- 
   }
 
   &_title {
@@ -123,7 +109,7 @@ html {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-  
+
     color: white;
     margin: 15px 20px;
   }
@@ -131,30 +117,53 @@ html {
   &_overlay {
     position: absolute;
     top: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .7) 13%, rgba(0, 212, 255, 0) 70%);
+    background: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.7) 13%,
+        rgba(0, 212, 255, 0) 70%);
     height: 100%;
     width: 100%;
     border-radius: inherit;
   }
-
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  padding: 60px 30px 30px;
 
-
-
-
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #000;
-    color: white;
-    padding: 60px 30px 30px;
-
-    &_logo {
-      width: 122px;
-      height: 40px;
-    }
-
+  &_logo {
+    width: 122px;
+    height: 40px;
   }
+}
+
+.error_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  & h1 {
+    color: $light-pink;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  & h2 {
+    color: $light-pink;
+    padding-bottom: 87px;
+  }
+
+  & a {
+    color: #000;
+    padding-bottom: 85px;
+  }
+}
