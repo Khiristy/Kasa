@@ -1,6 +1,5 @@
 import Gallery from "../../components/logements/GalleryCard.jsx";
 import Banner from "../../components/Banner.jsx";
-
 import homeBanner from "../../assets/images/homeBanner.png";
 
 function Home() {

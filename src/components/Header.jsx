@@ -10,7 +10,9 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <img src={kasaheaderlogo} className="App_logo" alt="logo" />
+        <NavLink to="/">
+          <img src={kasaheaderlogo} className="App_logo" alt="logo" />
+        </NavLink>
         <ul className="header_nav">
           <li>
             <NavLink to="/">Accueil</NavLink>

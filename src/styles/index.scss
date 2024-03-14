@@ -81,9 +81,9 @@ html {
   &_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
-    padding: 50px 35px;
+    gap: 65px;
+    padding: 45px;
+
   }
 }
 
@@ -91,7 +91,6 @@ html {
   max-width: 340px;
   height: 340px;
   border-radius: 10px;
-  margin-bottom: 25px;
   position: relative;
 
   &_img {
