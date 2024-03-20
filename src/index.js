@@ -10,9 +10,9 @@ import App from './App.jsx';
 export default function Root() {
 
   return (
-    <React.StrictMode>
+    // <React.StrictMode>
       <App />
-    </React.StrictMode>
+    // </React.StrictMode>
   );
 }
 
